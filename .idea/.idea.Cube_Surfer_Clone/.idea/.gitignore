@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.Cube_Surfer_Clone.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../:\dev\Unity\Cube_Surfer_Clone\.idea\.idea.Cube_Surfer_Clone\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
