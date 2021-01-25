@@ -9,6 +9,7 @@ TagManager:
   - Lava
   - Track
   - Wall
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX

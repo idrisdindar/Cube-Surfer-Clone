@@ -11,6 +11,7 @@ public class Character : MonoBehaviour
     private static Character _instance;
     private bool _canMove = true;
     [SerializeField] private ParticleSystem hitParticle;
+    [SerializeField] private ParticleSystem confettiParticle;
 
     #endregion
     
@@ -52,6 +53,14 @@ public class Character : MonoBehaviour
         if (other.gameObject.CompareTag("Track"))
         {
             gameObject.transform.GetChild(2).GetComponent<TrailRenderer>().emitting = true;
+        }
+
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            var offset = new Vector3(1, 3, 0);
+            CanMove = false;
+            Debug.Log("Level Completed");
+            Instantiate(confettiParticle, transform.position + offset, Quaternion.identity);
         }
     }
     
